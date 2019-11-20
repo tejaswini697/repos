@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Flask app</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    </head>
+	<style>
+	body{
+  background-image: url('https://www.google.com/search?q=background+images&rlz=1C1GCEU_enIN864IN864&tbm=isch&source=iu&ictx=1&fir=1Wdqsjofr9ArGM%253A%252CLAIZRd0gOwrSbM%252C_&vet=1&usg=AI4_-kT8tla6IctXfF7-qrTQL-sKoBssLw&sa=X&ved=2ahUKEwiekuDWifjlAhXRpOkKHaZ_BkIQ9QEwBXoECAgQNg#imgrc=1Wdqsjofr9ArGM:');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Tejaswini's web app</h1>
+        <strong><nav>
+          <ul class="menu">
+           
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+	 <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  </body>
+</html>

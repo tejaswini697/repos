@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+#p{
+margin-top: 20px;
+margin-left: 50px;
+}
+body{
+  background-image: url('https://www.google.com/search?q=background+images&rlz=1C1GCEU_enIN864IN864&tbm=isch&source=iu&ictx=1&fir=1Wdqsjofr9ArGM%253A%252CLAIZRd0gOwrSbM%252C_&vet=1&usg=AI4_-kT8tla6IctXfF7-qrTQL-sKoBssLw&sa=X&ved=2ahUKEwiekuDWifjlAhXRpOkKHaZ_BkIQ9QEwBXoECAgQNg#imgrc=1Wdqsjofr9ArGM:');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+  <div class="home">
+    <h1>A Python product</h1>
+    <p>This website was built with Python via the Flask framework.</p><br><br>
+	 
+     <a id='p' class='btn-lg btn-success' href="{{ url_for('about') }}">About</a>
+  </div>
+{% endblock %}
